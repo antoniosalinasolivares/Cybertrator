@@ -1,0 +1,10 @@
+C:\Users\Antonio\source\repos\Cybertrator\bin\Debug\Cybertrator.exe.config
+C:\Users\Antonio\source\repos\Cybertrator\bin\Debug\Cybertrator.exe
+C:\Users\Antonio\source\repos\Cybertrator\bin\Debug\Cybertrator.pdb
+C:\Users\Antonio\source\repos\Cybertrator\obj\Debug\Cybertrator.csprojAssemblyReference.cache
+C:\Users\Antonio\source\repos\Cybertrator\obj\Debug\Cybertrator.window_login.resources
+C:\Users\Antonio\source\repos\Cybertrator\obj\Debug\Cybertrator.Properties.Resources.resources
+C:\Users\Antonio\source\repos\Cybertrator\obj\Debug\Cybertrator.csproj.GenerateResource.cache
+C:\Users\Antonio\source\repos\Cybertrator\obj\Debug\Cybertrator.exe
+C:\Users\Antonio\source\repos\Cybertrator\obj\Debug\Cybertrator.pdb
+C:\Users\Antonio\source\repos\Cybertrator\obj\Debug\Cybertrator.Window_Dashboard.resources

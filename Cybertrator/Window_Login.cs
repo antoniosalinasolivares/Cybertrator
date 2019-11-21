@@ -15,8 +15,9 @@ namespace Cybertrator
 
         Window_Dashboard ds = new Window_Dashboard();
         public window_login() {
-            InitializeComponent();
+            FilesSetup.Run();
             Start();
+            InitializeComponent();
             State.Login = this;
         }
 
@@ -27,6 +28,7 @@ namespace Cybertrator
         private void Start() {
             State.Computers = FileLoader.GetComputers();
             State.Users = FileLoader.GetUsers();
+
         }
 
         private void Login() {
@@ -40,14 +42,17 @@ namespace Cybertrator
             if (success)
             {
                 State.Current_user = temp;
+                admin(temp);
                 Manage();
             }
+            admin(temp);
         }
 
         private void Manage() {
             
             Visible = false;
             Notify();
+            
             ds.Visible = true;
             txtbox_user.Text = "";
         }
@@ -55,7 +60,19 @@ namespace Cybertrator
         private void Notify() {
             ds.renderUser();
             ds.renderComputers();
-            ds.renderSales(); 
+            ds.renderSales();
+        }
+
+        private void admin(User user) 
+        {
+            if (user.Name == "admin")
+            {
+                ds.showAdmin();
+            }
+            else 
+            {
+                ds.hideAdmin();
+            }
         }
 
         public void Show(bool b) {

@@ -29,7 +29,6 @@ namespace Cybertrator
         //the comps.csv file contains computers, id's and money generated as: id,name,money the values id and money get parsed 
         private static void LoadUsers()
         {
-            FilesSetup.Run();
             using StreamReader sr = File.OpenText(credsPath);
             string s = "";
             string[] temp, sep = { "," };
@@ -66,12 +65,12 @@ namespace Cybertrator
 
         private static void LoadWeeklySales()
         {
-            using StreamReader sr = File.OpenText(weeklySales);
+            /*using StreamReader sr = File.OpenText(weeklySales);
             string s = "";
             while ((s = sr.ReadLine()) != null)
             {
                 weeklybalance = Double.Parse(s);
-            }
+            }*/
         }
 
 

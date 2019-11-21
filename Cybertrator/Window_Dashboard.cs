@@ -44,6 +44,7 @@ namespace Cybertrator
         }
 
         public void renderComputers() {
+            list_computer.Items.Clear();
             foreach (Computer computer in State.Computers)
             {
                 list_computer.Items.Add(computer.Name);
@@ -165,6 +166,23 @@ namespace Cybertrator
         private void LoadSales()
         {
             lbl_weeklySales.Text = "Ventas de la Semana: $" + weeklySales.ToString();
+        }
+
+        public void hideAdmin()
+        {
+            btn_addComputer.Visible = false;
+            btn_AddUser.Visible = false;
+            btn_deleteCurrentUser.Visible = false;
+            btn_deleteComputer.Visible = false;
+            txt_hourCost.Enabled = false;
+        }
+        public void showAdmin()
+        {
+            btn_addComputer.Visible = true;
+            btn_AddUser.Visible = true;
+            btn_deleteCurrentUser.Visible = true;
+            btn_deleteComputer.Visible = true;
+            txt_hourCost.Enabled = true;
         }
     }
 }

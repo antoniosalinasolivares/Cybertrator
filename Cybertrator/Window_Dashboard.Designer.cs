@@ -48,6 +48,8 @@
             this.btn_deleteComputer = new System.Windows.Forms.Button();
             this.btn_addComputer = new System.Windows.Forms.Button();
             this.btn_AddUser = new System.Windows.Forms.Button();
+            this.txt_hourCost = new System.Windows.Forms.TextBox();
+            this.lbl_fee = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_logout
@@ -241,12 +243,32 @@
             this.btn_AddUser.UseVisualStyleBackColor = true;
             this.btn_AddUser.Click += new System.EventHandler(this.btn_AddUser_Click);
             // 
+            // txt_hourCost
+            // 
+            this.txt_hourCost.Location = new System.Drawing.Point(191, 315);
+            this.txt_hourCost.Name = "txt_hourCost";
+            this.txt_hourCost.Size = new System.Drawing.Size(75, 20);
+            this.txt_hourCost.TabIndex = 22;
+            this.txt_hourCost.Text = "80";
+            // 
+            // lbl_fee
+            // 
+            this.lbl_fee.AutoSize = true;
+            this.lbl_fee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fee.Location = new System.Drawing.Point(188, 296);
+            this.lbl_fee.Name = "lbl_fee";
+            this.lbl_fee.Size = new System.Drawing.Size(96, 16);
+            this.lbl_fee.TabIndex = 23;
+            this.lbl_fee.Text = "Tarifa por hora";
+            // 
             // Window_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.lbl_fee);
+            this.Controls.Add(this.txt_hourCost);
             this.Controls.Add(this.btn_AddUser);
             this.Controls.Add(this.btn_addComputer);
             this.Controls.Add(this.btn_deleteComputer);
@@ -297,5 +319,7 @@
         private System.Windows.Forms.Button btn_deleteComputer;
         private System.Windows.Forms.Button btn_addComputer;
         private System.Windows.Forms.Button btn_AddUser;
+        private System.Windows.Forms.TextBox txt_hourCost;
+        private System.Windows.Forms.Label lbl_fee;
     }
 }
